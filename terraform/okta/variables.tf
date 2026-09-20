@@ -8,3 +8,15 @@ variable "okta_base_url" {
   type        = string
   default     = "okta.com"
 }
+
+variable "departments" {
+  description = "Department groups to create, keyed by group name"
+  type        = map(string)
+
+  default = {
+    Engineering = "Engineering staff"
+    Sales       = "Sales staff"
+    Clinical    = "Clinical staff"
+    Contractors = "External contractors"
+  }
+}
