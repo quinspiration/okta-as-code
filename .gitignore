@@ -1,0 +1,11 @@
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+.env
+__pycache__/
+venv/
+.venv/
+.DS_Store
