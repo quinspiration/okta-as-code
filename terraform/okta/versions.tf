@@ -7,6 +7,11 @@ terraform {
       version = "~> 7.0"
     }
   }
+
+  backend "gcs" {
+    bucket = "okta-as-code-tf-state"
+    prefix = "okta"
+  }
 }
 
 provider "okta" {
